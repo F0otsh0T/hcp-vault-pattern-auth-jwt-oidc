@@ -1,6 +1,6 @@
 ---
-title: VAULT / AUTH - JWT - OIDC: Public Key Validation (Kubernetes)
-description: HashiCorp Vault Authentication JWT/OIDC Public Key Validtaion with Kubernetes
+title: VAULT / AUTH - JWT - OIDC: "Public Key Validation (Kubernetes)"
+description: "HashiCorp Vault Authentication JWT/OIDC Public Key Validtaion with Kubernetes"
 ---
 
 # VAULT / AUTH - JWT - OIDC: Public Key Validation (Kubernetes)
