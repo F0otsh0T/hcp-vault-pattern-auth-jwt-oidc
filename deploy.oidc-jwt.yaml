@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-oidc-jwt
+  namespace: default
+  labels:
+    app: test-oidc-jwt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-oidc-jwt
+  template:
+    metadata:
+      labels:
+        app: test-oidc-jwt
+    spec:
+      serviceAccountName: vault-auth
+      containers:
+      - name: test-oidc-jwt
+        # image: dwdraju/alpine-curl-jq:latest
+        image: wbitt/network-multitool:alpine-extra
+        env:
+          - name: VAULT_ADDR
+            value: "http://192.168.65.2:8200"
+          - name: JWT
+            value: $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+          - name: KUBE_TOKEN
+            value: $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+        ports:
+        - containerPort: 80
