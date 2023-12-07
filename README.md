@@ -326,11 +326,12 @@ k3d cluster create --agents 2 --k3s-arg "--tls-san=192.168.65.2"@server:* auth-j
 
 
 ## Reference
-- https://www.vaultproject.io/docs/auth/jwt
-- https://www.vaultproject.io/docs/auth/jwt/oidc_providers#using-jwt-validation-public-keys
--  https://learn.hashicorp.com/tutorials/vault/agent-kubernetes#create-a-service-account
-- https://www.vaultproject.io/docs/platform/k8s/injector
-- https://learn.hashicorp.com/tutorials/vault/kubernetes-sidecar
+- https://developer.hashicorp.com/vault/docs/auth/jwt
+- https://developer.hashicorp.com/vault/docs/auth/jwt#jwt-verification
+- https://developer.hashicorp.com/vault/tutorials/kubernetes/agent-kubernetes#create-a-service-account
+- https://developer.hashicorp.com/vault/docs/platform/k8s/injector
+- https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-sidecar
+- https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes#creating-a-role-and-logging-in
 
 ## Appendix
 
