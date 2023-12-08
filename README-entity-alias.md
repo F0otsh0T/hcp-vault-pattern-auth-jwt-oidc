@@ -42,7 +42,7 @@ vault write auth/jwt/role/my-role \
 
 Since the Kubernetes `serviceaccount` JWT is used, the `sub` value needs to be harvested from that JWT token so an Entity Alias can be created prior to that Auth identity requests a token from Vault.
 
-Please refer to the [~/README.md](README.md) in this Repo or this [tutorial](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes) for the Vault Kubernetes JWT/OIDC Auth documentation steps.
+Please refer to the [~/README.md](README.md) in this Repo or this [document](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/kubernetes) for more Vault Kubernetes JWT/OIDC Auth information.
 
 Steps:
 - Harvest Service Account JWT Token
