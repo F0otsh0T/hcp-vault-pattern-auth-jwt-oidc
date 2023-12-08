@@ -3,7 +3,7 @@ title: "VAULT / AUTH - JWT - OIDC: Public Key Validation (Kubernetes)"
 description: "Addendum: HashiCorp Vault Entity Alias"
 ---
 
-# Vault Auth JWT/OIDC Entity Alias
+# [Entity Alias] Vault Auth - Kubernetes JWT/OIDC
 
 ## Background
 [**Entity Aliasing**](https://developer.hashicorp.com/vault/docs/concepts/identity#entities-and-aliases) allows for the same user, application, or workflow utilizing multiple Vault Authentication methods or accounts to be associated with the same [Vault Identity Entity](https://developer.hashicorp.com/vault/docs/concepts/identity#entities-and-aliases).  
